@@ -1,0 +1,11 @@
+cat > vercel.json << 'EOF'
+{
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "index.js" }]
+}
+EOF
+
+git add vercel.json
+git commit -m "chore: add Vercel config"
+git push
