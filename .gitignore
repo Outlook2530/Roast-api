@@ -1,0 +1,9 @@
+cat > .gitignore << 'EOF'
+node_modules
+.env
+.DS_Store
+EOF
+
+git add .gitignore
+git commit -m "chore: add .gitignore"
+git push -u origin main
