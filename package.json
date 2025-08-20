@@ -1,7 +1,13 @@
-npm init -y
-npm install express cors
-npm pkg set scripts.start="node index.js"
-
-git add package.json package-lock.json
-git commit -m "chore: init package.json and deps (express, cors)"
-git push
+{
+  "name": "roast-api",
+  "version": "1.0.0",
+  "description": "Simple roast API in Hinglish",
+  "main": "api/roast.js",
+  "scripts": {
+    "start": "node api/roast.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
