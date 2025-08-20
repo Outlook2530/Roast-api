@@ -1,0 +1,7 @@
+npm init -y
+npm install express cors
+npm pkg set scripts.start="node index.js"
+
+git add package.json package-lock.json
+git commit -m "chore: init package.json and deps (express, cors)"
+git push
