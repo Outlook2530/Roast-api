@@ -1,5 +1,9 @@
 {
   "version": 2,
-  "builds": [{ "src": "api/roast.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/api/(.*)", "dest": "/api/$1" }]
+  "builds": [
+    {
+      "src": "api/amir.js",
+      "use": "@vercel/node"
+    }
+  ]
 }
